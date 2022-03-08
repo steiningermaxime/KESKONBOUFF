@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Page contact</title>
+  <link rel="stylesheet" href="css/Page_contact.css">
+ 
+</head>
+<body>
+         
+  <header>
+    <nav class="logo">
+        <img src="img/logo.png" alt="logo"> 
+
+          <ul class="menu">
+          
+        <li><a href="index.html" title="Accueil">Accueil</a></li>
+        <li><a href="recettes.html" title="recettes de noël">recettes de noël</a></li>
+        <li><a href="coups_ de_coeur.html" title="Nos  coup de coeur">Nos coups de coeur</a></li>
+        <li><a href="Page_contact.html" title="Contact">Contact</a></li>
+  
+          </ul> 
+              </nav>
+      </header>
+
+
+<section>
+  <div class="contactez-nous">
+        <h1>Contactez-nous</h1>
+            <p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+                  <form action="/page-traitement-donnees" method="post">
+
+                      <div>
+                        <label for="prénom">Prénom </label>
+                      </div>
+                      <div>
+                        <input type="text" id="Prénom" name="Prénom" placeholder="Martin" required>
+                      </div>
+
+
+                      <div>
+                        <label for="nom">Nom</label>
+                      </div>
+                      <div>
+                        <input type="text" id="nom" name="Nom" placeholder="Dupont" required>
+                      </div>
+
+
+                      <div>
+                        <label for="Adresse E-mail">Adresse E-mail</label>
+                      </div>
+                      <div>
+                        <input type="Adresse E-mail" id="Adresse E-mail" name="Adresse E-mail" placeholder="nomprénom@mail.com" required>
+                      </div>
+                  
+
+                      <div>
+                        <label for="sujet">Quel est le sujet de votre Sujet ?</label>
+                      </div>
+                      <div>
+                        <select name="sujet" id="sujet" required>
+                              <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                              <option value="probleme-compte">Problème avec mon compte</option>
+                              <option value="question-produit">Question à propos d’un produit</option>
+                              <option value="Problème-site-internet">Problème avec le site internet</option>
+                              <option value="autre">Autre...</option>
+                        </select>
+                      </div>
+
+                  
+                      <div>
+                        <label for="message">Votre message</label>
+                      </div>
+                      <div>
+                        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+                      </div>
+
+                      <div>
+                        <button type="submit"><a class="confirmation" href="accueil.html" title="Accueil">Envoyez mon message</a> </button >
+                      </div>
+ 
+                  </form>
+                          
+  </div>
+</section>
+
+
+<footer>
+  <address>   
+    KESKONBOUFF
+    99 rue de la Gendarmerie
+    59122
+  </address>
+</footer>
+        
+</body>
+</html>
